@@ -1,0 +1,93 @@
+/**
+* main.less
+*/
+
+@import '../globals.less';
+@import './vars.less';
+
+body {
+  background-color: @gray-light;
+}
+
+.btn {
+  /* Override OSG styles */
+  padding: 8px 18px;
+  .global-lh-pd-fs;
+
+  > .fa-2x {
+	font-size: inherit;
+  }
+
+  > .fa-3x {
+	font-size: inherit;
+  }
+
+  > .fa-4x {
+	font-size: inherit;
+  }
+
+  > .fa-5x {
+	font-size: inherit;
+  }
+}
+
+.search-form.row.content.top-tools {
+  box-shadow: 0px 3px 7px rgba(0,0,0,0.3);
+  border: none;
+}
+
+.has-feedback .form-control {
+  border: 1px solid @ey-orange;
+  padding: 0 @channelToolsPadding - 3px 0;
+  color: @input-color-placeholder;
+}
+
+
+/* Loading Indicator -- Remove later*/
+
+
+
+.loader {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  progress {
+	width: 60%;
+	height: 8px;
+	margin-top: 15%;
+  }
+}
+
+@keyframes move {
+  0% {
+	background-position: 0 0;
+  }
+
+  100% {
+	background-position: 28px 0;
+  }
+}
+
+.Select {
+  .Select-control {
+	border-radius: @globalRadius;
+  }
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+button[disabled],
+html input[disabled] {
+  background-color: #eee;
+}
+
+.Loader {
+  .Loader__background{
+	position:fixed !important;
+  }
+}
+
+

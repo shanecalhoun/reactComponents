@@ -1,0 +1,315 @@
+
+@import './vars';
+@import './mixins';
+
+
+/* default Global font sizes */
+
+// Small devices (phones, 320px and up)
+@mobile-default: ~"only screen and (min-width : 320x) and (max-width : 575px)";
+
+// Small devices (landscape phones, 576px and up)
+@mobile-large: ~"only screen and (min-width : 576px) and (max-width : 766px)";
+
+// All mobile devices (Mobiles, 768px and below)
+@all-mobiles: ~"only screen and (max-width : 767px)";
+
+// Medium devices (tablets, 768px and up)
+@tablet-default: ~"only screen and (min-width : 768px) and (max-width : 991px)";
+
+// Large devices (desktops, 992px and up)
+@desktop-small: ~"only screen and (min-width : 992px) and (max-width : 1199px)";
+
+// desktops (large desktops, 1200px and up)
+@desktop-default: ~"only screen and (min-width : 1200px)";
+
+// Extra large desktop (Extra large desktops, 1824px and up)
+@desktop-large: ~"only screen and (min-width : 1824px)";
+
+body {
+  font-size: 2vw;
+  line-height: 3vw;
+
+  @media @all-mobiles {
+	font-size: 100%;
+	line-height: 100%;
+  }
+
+  @media @tablet-default {
+	font-size: 1.7vw;
+	line-height: 4vw;
+  }
+
+  @media @desktop-small {
+	font-size: 1.5vw;
+  }
+
+  @media @desktop-default {
+	font-size: .87vw;
+	line-height: 2vw;
+  }
+
+  @media @desktop-large {
+	line-height: 1.65vw;
+  }
+}
+
+.btn {
+  font-size: 2vw;
+  line-height: 3vw;
+
+  @media @all-mobiles {
+	font-size: 100%;
+	line-height: 100%;
+  }
+
+  @media @tablet-default {
+	line-height: 4vw;
+  }
+
+  @media @desktop-small {
+	font-size: 1.5vw;
+  }
+
+  @media @desktop-default {
+	font-size: .87vw;
+	line-height: 2vw;
+  }
+
+  @media @desktop-large {
+	font-size: 0.87vw;
+	line-height: 1.65vw;
+
+	&.btn-secondary, &.btn-primary {
+	  font-size: 0.7vw;
+	}
+  }
+}
+
+input,
+textarea,
+select,
+.Select-control,
+.form-control,
+.Select-menu-outer,
+.forms-search .adv-search {
+  font-size: 2vw;
+  line-height: 3vw;
+
+  @media @all-mobiles {
+	font-size: 100%;
+	line-height: 100%;
+  }
+
+  @media @tablet-default {
+	line-height: 4vw;
+  }
+
+  @media @desktop-small {
+	font-size: 1.5vw;
+  }
+
+  @media @desktop-default {
+	font-size: .87vw;
+	line-height: 2vw;
+  }
+
+  @media @desktop-large {
+	font-size: 0.83vw;
+	line-height: 1.65vw;
+  }
+}
+
+.Select-control {
+  line-height: 4vw;
+
+  @media @tablet-default {
+	line-height: 4vw;
+  }
+
+  @media @desktop-default {
+	line-height: 2vw;
+  }
+
+  @media @desktop-large {
+	line-height: 1.9vw;
+  }
+
+  @media @all-mobiles {
+	line-height: 100%;
+  }
+}
+
+label {
+  line-height: 2vw;
+
+  @media @tablet-default {
+	line-height: 4vw;
+  }
+
+  @media @desktop-small {
+	line-height: 3.5vw;
+  }
+
+  @media @desktop-default {
+	line-height: 2vw;
+  }
+
+  @media @desktop-large {
+	line-height: 1.8vw;
+  }
+
+  @media @all-mobiles {
+	line-height: 100%;
+  }
+}
+
+h1 {
+  font-size: 4vw;
+  line-height: 4.2vw;
+
+  @media @desktop-default {
+  }
+
+  @media @desktop-large {
+  }
+
+  @media @all-mobiles {
+	font-size: initial;
+	line-height: 100%;
+  }
+}
+
+h2 {
+  font-size: 3.3vw;
+  line-height: 3.4vw;
+
+  @media @desktop-default {
+  }
+
+  @media @desktop-large {
+  }
+
+  @media @all-mobiles {
+	font-size: initial;
+	line-height: 100%;
+  }
+}
+
+h3 {
+  font-size: 2.9vw;
+  line-height: 3vw;
+
+  @media @desktop-default {
+  }
+
+  @media @desktop-large {
+  }
+
+  @media @all-mobiles {
+	font-size: initial;
+	line-height: 100%;
+  }
+}
+
+h4 {
+  font-size: 3vw;
+  line-height: 3.2vw;
+
+  @media @desktop-default {
+	font-size: 2.2vw;
+	line-height: 2.4vw;
+  }
+
+  @media @desktop-large {
+  }
+
+  @media @all-mobiles {
+	font-size: initial;
+	line-height: 100%;
+  }
+}
+
+h5,
+.modal-control .modal-header .modal-title,
+.add-edit-page-title {
+  font-size: 1.6vw;
+  line-height: 1.9vw;
+
+  @media @desktop-default {
+  }
+
+  @media @desktop-large {
+  }
+
+  @media @all-mobiles {
+	font-size: initial;
+	line-height: 100%;
+  }
+}
+
+h6,
+.application-name .title {
+  font-size: 2.1vw;
+  line-height: 3vw;
+
+  @media @all-mobiles {
+	font-size: initial;
+	line-height: 100%;
+  }
+
+  @media @tablet-default {
+	font-size: 1.7vw;
+	line-height: 4vw;
+  }
+
+  @media @desktop-default {
+	font-size: 1.3vw;
+	line-height: 2vw;
+  }
+
+  @media @desktop-large {
+	font-size: 1.05vw;
+	line-height: 1.65vw;
+  }
+
+}
+
+.container .typeahead-control input {
+  height: 20px;
+
+  @media @desktop-default {
+  }
+
+  @media @desktop-large {
+	height: inherit;
+  }
+}
+
+.tiny-text {
+  font-size: .71vw;
+  line-height: 1vw;
+
+  @media @all-mobiles {
+	font-size: 100%;
+	line-height: 100%;
+  }
+
+  @media @tablet-default {
+	font-size: 1.5vw;
+	line-height: 2vw;
+  }
+
+  @media @desktop-small {
+	font-size: 1.5vw;
+	line-height: 2vw;
+  }
+
+  @media @desktop-default {
+  }
+
+  @media @desktop-large {
+  }
+}
+
+
